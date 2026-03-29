@@ -1,8 +1,35 @@
-## sbt project compiled with Scala 3
+# Real-Time Traffic Congestion Prediction System
 
-### Usage
+## Overview
+This project is a real-time data processing system that collects traffic data from the TomTom Traffic API, processes it using Apache Kafka and Apache Spark, and analyzes traffic congestion patterns.
 
-This is a normal sbt project. You can compile code with `sbt compile`, run it with `sbt run`, and `sbt console` will start a Scala 3 REPL.
+The goal is to provide real-time traffic insights for commuters, transportation planners, and analysts.
 
-For more information on the sbt-dotty plugin, see the
-[scala3-example-project](https://github.com/scala/scala3-example-project/blob/main/README.md).
+---
+
+## Tech Stack
+- Scala
+- Apache Kafka
+- Apache Spark (Structured Streaming, MLlib, GraphX)
+- TomTom Traffic API
+- sbt
+
+---
+
+## Features
+- Retrieve real-time traffic data from TomTom API
+- Stream data into Kafka
+- Process streaming data using Spark Structured Streaming
+- Predict traffic congestion levels
+- Analyze road networks using GraphX
+
+---
+## Setup Instructions
+
+### 1. Clone the repository
+
+### 2. Add your API key
+Create a file, use example file as template
+
+### 3. Run the project
+In the terminal, run "sbt clean run" 
