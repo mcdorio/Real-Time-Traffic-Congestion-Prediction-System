@@ -67,6 +67,10 @@ The goal is to provide real-time traffic insights for commuters, transportation 
 ### 2. Add your API key
 Create a file, use example file as template
 
+
+### 3. Run the project
+In the terminal, run sbt "runMain TomTomKafkaProducer"
+
 ### 4. Verify Kafka messages
 In a second terminal, run the following command
 kafka-console-consumer.sh --topic traffic_events --from-beginning --bootstrap-server localhost:9092
