@@ -76,3 +76,6 @@ In a second terminal, run the following command
 kafka-console-consumer.sh --topic traffic_events --from-beginning --bootstrap-server localhost:9092
 
 - Currently sends one message at a time for testing and debugging; will be extended to continuous streaming in later iterations
+
+### 5. Run Spark Streaming 
+In the terminal, run sbt "runMain SparkIngest"
