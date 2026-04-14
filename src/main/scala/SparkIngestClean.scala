@@ -73,9 +73,6 @@ object SparkIngestClean {
         col("timestamp")
       )
 
-
-    //CLEANING BLOCK
-
     val cleanDf = trafficDf
       //Trim Spaces
       .withColumn("point", trim(col("point"))
@@ -128,7 +125,7 @@ object SparkIngestClean {
     .withColumn("processed_at", current_timestamp())
 
     //Write the streaming DataFrame to the console
-    val query = trafficDf.writeStream
+    val query = cleanDf.writeStream
       .format("console")
       .outputMode("append")
       .option("truncate", false)
